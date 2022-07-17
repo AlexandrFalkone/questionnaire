@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/5041/premium/5041989.png?token=exp=1658087490~hmac=7a0a5a73d11c9d70682fea0dc7a58fb0">
+    <link rel="stylesheet" href="style.css">
+    <title>Анкета для самооценки</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Анкета для самооценки сотрудника компании</h1>
+            <p>
+                Данный шаблон анкеты предназначен для самооценки сотрудника, 
+                работающего в Вашей организации. Анкета позволяет определить 
+                (и повысить) вовлеченность сотрудников в оценочный процесс, определить 
+                совпадает ли их самооценка с оценкой руководителя. Также анкета 
+                показывает уверенность работника в себе и его профессиональных 
+                качествах. Если самооценка низкая, это может быть следствием 
+                неправильно организованных мотивации и контроля за работой персонала.
+            </p>
+        </div>
+
+        <div class="form-group">
+            <h3>1.Укажите, пожалуйста, Ваши фамилию, имя и отчество:</h3>
+
+            <label for="name"></label>
+            <input type="name" id="name" required placeholder="Фамилия">
+
+            <label for="name"></label>
+            <input type="name" id="name" required placeholder="Имя Отчество">
+        </div>
+
+        <div class="form-group">
+            <h3>2.Назовите, пожалуйста, подразделение, в котором Вы работаете:</h3>
+
+            <label for="text"></label>
+            <input type="text" id="text" required placeholder="Подразделение">
+        </div>
+
+        <div class="form-group">
+            <h3>3.Укажите, пожалуйста, Вашу должность:</h3>
+
+            <label for="text"></label>
+            <input type="text" id="text" required placeholder="Должность">
+        </div>
+
+        <div class="form-group">
+            <h3>4.Сколько полных лет Вы работаете в организации:</h3>
+
+            <label for="number" ></label>
+            <input type="number" id="number" required min="0" max="99" placeholder="Введите подходящую цифру">
+        </div>
+
+        <div class="form-group">
+            <h3>5.Перечислите, пожалуйста, знания и умения, которыми Вы должны 
+                владеть, чтобы хорошо выполнять свою работу:</h3>
+
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <h3>6.Есть ли знания и умения, которых Вам не хватает, чтобы улучшить 
+                свою работу в организации?</h3>
+
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <h3>7.
+                Оцените, пожалуйста, свою работу в организации по перечисленным 
+                ниже характеристикам:</h3>
+
+                <label for="power">Производительность</label>
+                <select id="power" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="quality">Качество работы</label>
+                <select id="quality" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="competence">Компетентность</label>
+                <select id="competence" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="speed">Скорость работы</label>
+                <select id="speed" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="safety">Безопасность труда и правильная эксплуатация оборудования</label>
+                <select id="safety" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="document">Работа с документами</label>
+                <select id="document" required>
+                    <option value="low">Плохо</option>
+                    <option value="satisfactory">Удовлетворительно</option>
+                    <option value="finely">Хорошо</option>
+                    <option value="perfectly">Отлично</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <h3>8.Прочитайте, пожалуйста, характеристики личности, представленные 
+                в таблице. Насколько каждая из них соответствует Вашему характеру?
+            </h3>
+
+            <label for="ambition">Амбициозность</label>
+                <select id="ambition">
+                    <option value="low">Совершенно не соответствует</option>
+                    <option value="satisfactory">Скорее не соответствует</option>
+                    <option value="finely">Скорее соответствует</option>
+                    <option value="perfectly">Полностью соответствует</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="resistance">Устойчивость к критике</label>
+                <select id="resistance">
+                    <option value="low">Совершенно не соответствует</option>
+                    <option value="satisfactory">Скорее не соответствует</option>
+                    <option value="finely">Скорее соответствует</option>
+                    <option value="perfectly">Полностью соответствует</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="sociability">Коммуникабельность</label>
+                <select id="sociability">
+                    <option value="low">Совершенно не соответствует</option>
+                    <option value="satisfactory">Скорее не соответствует</option>
+                    <option value="finely">Скорее соответствует</option>
+                    <option value="perfectly">Полностью соответствует</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="initiative">Инициативность</label>
+                <select id="initiative">
+                    <option value="low">Совершенно не соответствует</option>
+                    <option value="satisfactory">Скорее не соответствует</option>
+                    <option value="finely">Скорее соответствует</option>
+                    <option value="perfectly">Полностью соответствует</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+                <label for="energy">Энергичность</label>
+                <select id="energy">
+                    <option value="low">Совершенно не соответствует</option>
+                    <option value="satisfactory">Скорее не соответствует</option>
+                    <option value="finely">Скорее соответствует</option>
+                    <option value="perfectly">Полностью соответствует</option>
+                    <option value="loss" selected>Затрудняюсь ответить</option>
+                </select>
+
+            </div>
+
+        <div class="form-radio">
+            <h3>9.Насколько интересны для Вас дальнейшие профессиональный 
+                рост и продвижение внутри компании?</h3>
+
+                <div class="radio">
+                    <input type="radio" id="radio6" name="status">
+                    <label for="radio6">Очень интересны</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio7" name="status">
+                    <label for="radio7">Скорее интересны</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio8" name="status">
+                    <label for="radio8">Скорее не интересны</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio9" name="status">
+                    <label for="radio9">Совсем не интересны</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio10" name="status">
+                    <label for="radio10">Затрудняюсь ответить</label>
+                </div>
+        </div>
+
+        <div class="form-radio">
+            <h3>10.Как Вы считаете, могли бы Вы занять в организации должность выше,
+                чем занимаете сейчас?</h3>
+
+                <div class="radio">
+                    <input type="radio" id="radio11" name="post">
+                    <label for="radio11">Да, мог(ла) бы</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio12" name="post">
+                    <label for="radio12">Нет, не мог(ла) бы</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio13" name="post">
+                    <label for="radio13">Затрудняюсь ответить</label>
+                </div>
+        </div>
+
+        <div class="form-radio">
+            <h3>11.Как Вы думаете, смогла бы Ваша организация быстро найти 
+                сотрудника, способного выполнять Ваши обязанности, в случае 
+                Вашего отсутствия?</h3>
+
+                <div class="radio">
+                    <input type="radio" id="radio14" name="swap">
+                    <label for="radio14">Да, мог(ла) бы</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio15" name="swap">
+                    <label for="radio15">Нет, не мог(ла) бы</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio16" name="swap">
+                    <label for="radio16">Затрудняюсь ответить</label>
+                </div>
+        </div>
+
+        <div class="form-radio">
+            <h3>12.Как Вы думаете, такому сотруднику, как Вы, сложно или просто 
+                найти работу на рынке труда?</h3>
+
+                <div class="radio">
+                    <input type="radio" id="radio1" name="market">
+                    <label for="radio1">Очень просто</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio2" name="market">
+                    <label for="radio2">Скорее просто</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio3" name="market">
+                    <label for="radio3">Скорее сложно</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio4" name="market">
+                    <label for="radio4">Очень сложно</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="radio5" name="market">
+                    <label for="radio5">Затрудняюсь ответить</label>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <h3>13.Ваш пол:</h3>
+
+            <label for="sex"></label>
+            <select id="sex">
+                <option value="man">Мужчина</option>
+                <option value="woman">Женщина</option>
+                <option value="other" selected>Остальные</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+
+            <label for="date"></label>
+            <input type="date">
+
+            <button class="btn">Отправить</button>
+        </div>
+    </div>
+</body>
+</html>

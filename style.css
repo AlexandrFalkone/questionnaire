@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Roboto:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Gentium Book Plus', sans-serif;
+    font-size: 18px;
+    background-image: url(https://infostart.ru/upload/iblock/218/21803ed90ebd29de86f61296d39bafab.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.9);
+}
+
+.container{
+    max-width: 950px;
+    margin: auto;
+    background: rgb(141, 136, 136);
+}
+
+.title{
+    padding: 20px;
+}
+
+.title h1{
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.title p{
+    text-align: center;
+    color: rgb(78, 74, 74);
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.form-group, .form-radio h3{
+    padding: 10px 20px 10px 20px;
+}
+
+.form-group{
+    display: block;
+}
+
+.form-group input, textarea, select{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 20px 0 0;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: auto;
+    color: rgb(94, 92, 92);
+    outline: none;
+    border: none;
+}
+
+input:hover, textarea:hover, select:hover{
+    box-shadow: 0px 0px 45px 0px #000000;
+}
+
+.radio{
+    display: block;
+    margin: 5px 20px 0 0;
+    padding: 10px 10px 10px 20px;
+    font-family: inherit;
+    user-select: none;
+}
+
+.btn{
+    display: block;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 45px 0px #000000;
+}
